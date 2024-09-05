@@ -1,0 +1,76 @@
+.input-field{
+    outline: none;
+    border: none;
+    border: 1px solid #7b85e3;
+    color: #c6c5c4;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 20px;
+    font-weight: 800;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.input-field::placeholder{
+    color: #c6c5c4;
+}
+
+.input-field:hover{
+    border: 1px solid rgb(227, 227, 227);
+}
+.input-field:focus{
+    border: 2px solid rgb(227, 227, 227);
+}
+
+.submit-btn{
+    background-color: blue;
+    color: red;
+    padding: 15px 16px;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 16px;
+}
+.submit-btn:hover{
+    scale: 1.05;
+    transition: scale 0.5s linear;
+}
+
+.weather-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-head-content{
+    width: 100%;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.border-style{
+    border-bottom: 1px solid #6f6f6f;
+}
+
+#root{
+    background-image:url("/public/app-bg-img.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width : 200px) and (max-width : 650px){
+    .form{
+        flex-direction: column;
+    }
+
+    .form>input{
+        width: 100%;
+    }
+    .form>Button{
+        width: 100%;
+    }
+
+    .weather-card-container{
+        width: 100%;
+    }
+
+    .weather-card{
+        width: 100%;
+    }
+}
